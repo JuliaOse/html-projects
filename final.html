@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cats'R cute</title>
+  <style>
+    body {
+      background: linear-gradient(110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-family: cursive;
+      color: palevioletred;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 70px;
+      font-family: monospace;
+      color: coral;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid rgb(234, 81, 106);
+      padding: 30px 50px;
+      border-radius: 20px;
+    }
+
+    li {
+      display: inline;
+      padding: 20px 50px;
+      border-radius: 30px;
+      margin: 5px 10px;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 540;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      text-decoration-color: inherit;
+    }
+
+    li:hover {
+      color: rgba(180, 32, 221, 0.65);
+      text-decoration: underline;
+      text-decoration-line: overline;
+      text-decoration-color: rgb(247, 161, 175);
+      text-decoration-thickness: 1.5px;
+      background-color: rgba(255, 0, 0, 0.187);
+    }
+
+    li:active {
+      text-decoration: underline;
+      text-decoration-color: rgb(143, 53, 207);
+    }
+
+    button {
+      padding: 10px 30px;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      background-color: bisque;
+      border: 1px solid seagreen;
+      border-radius: 10px;
+      font-size: 17px;
+      box-shadow: 2.5px 3px black;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    button:hover {
+      background-color: rgba(46, 139, 86, 0.541);
+      border: 2px solid rgb(246, 209, 164);
+      box-shadow: none;
+    }
+
+    input {
+      margin: 0 auto;
+    }
+
+    .first-image {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid rgba(255, 0, 0, 0.426);
+      border-radius: 40px;
+    }
+
+    .about-cat {
+      text-align: center;
+      font-size: 18px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin: 30px auto;
+    }
+
+    .last-cat {
+      display: block;
+      margin: 0 auto;
+      width: 500px;
+      border-radius: 100%;
+    }
+
+    .last-paragraph {
+      text-align: center;
+      font-size: 20px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The world's <strong>cutest</strong> pets</h1>
+  <img class="first-image" src="https://www.northnowravet.com.au/wp-content/uploads/2018/01/kitten-vacc.jpg"
+    alt="cat" />
+  <h2>CATS🥰</h2>
+  <hr />
+  <p class="about-cat">
+    The cat is a domestic species of small carnivorous mammal. It is the only
+    domesticated species in the family Felidae and is commonly referred to as
+    the domestic cat or house cat to distinguish it from the wild members of
+    the family. Cats have <strong>sweet features</strong>. It has
+    <strong>two beautiful eyes, adorably tiny paws, sharp claws, and two perky ears
+      which are very sensitive to sounds</strong>
+    . It has a tiny body covered with smooth fur and it has a furry tail as
+    well. Cats have an adorable face with a tiny nose, a big mouth and a few
+    whiskers under its nose.
+    <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Learn more.</a>
+  </p>
+  <br />
+  <ul>
+    <li>
+      <a href="https://www.petfinder.com/pet-adoption/cat-adoption/" target="_blank">Adopt a cat</a>
+    </li>
+    <li>
+      <a href="https://www.amazon.com/cat-kittens-food-grain-free/b?ie=UTF8&node=2975265011" target="_blank">Find
+        catfood</a>
+    </li>
+    <li>
+      <a href="https://www.amazon.com/cat-toys/s?k=cat+toys" target="_blank">Get cat toys</a>
+    </li>
+  </ul>
+  <br />
+
+  <h3>Hello!👋</h3>
+
+  <img class="last-cat" src="https://i.pinimg.com/736x/89/12/27/8912270a91b9f4150309e5ea9423e73c.jpg" alt="cute cat"
+    width="400px" />
+
+  <p class="last-paragraph">
+    Recieve newsletters about the perfect breed for you, the best catfood
+    around, and the best toys for your pet. Click the button below to join our
+    mailing list.
+  </p>
+  <!-- <form action="">
+      <input type="text" value="email" />
+    </form> -->
+  <button>Join the kitty mailing list</button>
+  <script>
+    function Maillist() {
+      let name = prompt("What's your name?");
+      let email = prompt("What's your email address?");
+      let h3 = document.querySelector("h3");
+      alert("Got it!");
+      h3.innerHTML = "Hey, " + name + "! We'll be in touch🙂";
+    }
+
+    let button = document.querySelector("button");
+    button.addEventListener("click", Maillist);
+  </script>
+</body>
+
+</html>

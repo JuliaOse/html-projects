@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainWorms.com</title>
+    <style>
+      ul {
+        list-style: none;
+        display: inline;
+        padding: 0;
+        margin-left: 10px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 2px 20px;
+        font-family: Anonymous Pro, monospace;
+        font-size: 17px;
+        font-weight: 100;
+        max-width: 110px;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out;
+      }
+
+      li:hover {
+        cursor: pointer;
+        background-color: #2d2b2945;
+        color: #521703;
+      }
+
+      button {
+        background-color: #6b514276;
+        font-size: 17px;
+        color: #521703;
+        border-style: hidden;
+        padding: 9px 15px;
+        border-radius: 20px;
+        font-family: "Times New Roman", Times, serif;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #6b5142;
+      }
+
+      button:active {
+        border-color: #2d2b29;
+        border-style: solid;
+        border-width: 1.5px;
+        font-size: 15px;
+        font-weight: 800px;
+        color: black;
+      }
+
+      span {
+        text-decoration: line-through;
+        font-family: Righteous, monospace;
+        font-size: 30px;
+        font-style: oblique;
+        font-weight: lighter;
+        color: #2e2b29da;
+        text-decoration-color: black;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 70px;
+      }
+
+      p {
+        text-align: left;
+        font-size: 25px;
+        font-family: Raleway, Anonymous Pro, monospace;
+        font-weight: 430;
+        color: #1f0b01;
+      }
+
+      .head {
+        top: 0;
+        display: fl;
+        line-height: 2;
+        background-color: rgba(129, 109, 100, 0.871);
+      }
+
+      .title {
+        font-family: Righteous, monospace;
+        font-size: 37px;
+        font-weight: lighter;
+        color: #2e2b29;
+        display: inline;
+        top: 0;
+        margin: 10px 60px;
+        padding: 10px 290px;
+      }
+
+      .contents {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        gap: 100px;
+        width: stretch;
+      }
+
+      .join-button {
+        position: relative;
+        top: -80px;
+        left: 1000px;
+        padding: 13px 35px;
+        margin: 10px;
+      }
+
+      .join-button::before {
+        font-size: 20px;
+        content: "Start reading";
+
+        transition: all 200ms ease-in-out;
+      }
+      .join-button::after {
+        transition: all 800ms ease-in-out;
+      }
+
+      .join-button:hover::before {
+        font-size: 0px;
+      }
+
+      .join-button:hover::after {
+        content: "Find books 🔍 ";
+        font-size: 19px;
+      }
+
+      .buttons {
+        display: inline;
+      }
+
+      .lists {
+        display: inline;
+      }
+
+      #footer {
+        position: relative;
+
+        left: 600px;
+        font-weight: 550;
+        font-size: 25px;
+      }
+
+      #landing-page {
+        background-image: url(/images/books.jpg);
+        background-color: #8a786dcd;
+        background-size: contain;
+        width: 1500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="landing-page">
+      <div class="head">
+        <div class="lists">
+          <ul>
+            <li>Books</li>
+            <li>Library</li>
+            <li>About</li>
+          </ul>
+        </div>
+
+        <div class="title"><span>book</span>BrainWorms</div>
+        <div class="buttons">
+          <button>Log in</button>
+          <button>Sign up</button>
+        </div>
+      </div>
+
+      <div class="contents">
+        <div>
+          <img
+            src="images/domain_b_w.webp"
+            alt="thinking image"
+            width="600px"
+          />
+        </div>
+
+        <div class="paragraph">
+          <h1>Welcome readers!🙋</h1>
+          <p>
+            But Art is a punitive sentence, not a birthright, & there is nothing
+            in my early life that suggests artistick aptitude or even interest,
+            my pastimes & fascinations nearly all being what may – & were –
+            deemed the merely villainous. And though I am, of course, the hero
+            of this, my own tale, if only because I can’t really imagine anyone
+            else wanting to be, my story is no remade myth of Orpheus, but the
+            story of a sewer rat made worse.
+          </p>
+        </div>
+        <hr />
+      </div>
+      <button class="join-button"></button>
+    </div>
+
+    <div>
+      <p id="footer">Coded with ❤️ by Jules</p>
+    </div>
+  </body>
+</html>

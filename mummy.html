@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+
+            background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Secular One', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Secular One', sans-serif;
+            font-size: 30px;
+        }
+
+        img {
+            width: 600px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 790px) {
+            body {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                margin: 0 auto;
+                display: block;
+                width: 100%;
+            }
+        }
+
+
+        button {
+            margin: 10px auto;
+            display: block;
+            padding: 5px 50px;
+            border: 1px solid seagreen;
+            border-radius: 10px;
+            font-size: 17px;
+            box-shadow: 2.5px 3px black;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        button:hover {
+            box-shadow: none;
+            border: 1.5px solid black;
+        }
+
+        p {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            font-family: monospace;
+            font-size: 20px;
+
+        }
+
+        input,
+        textarea {
+            outline: none;
+
+            max-width: 0 auto;
+            border: none;
+            border-bottom: 2px solid black;
+            margin: 20px;
+        }
+
+        form {
+
+            width: 50%;
+            border-radius: 30px;
+            background: #fff;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-top: 100px;
+            min-width: 800px
+        }
+
+        .flex {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Mummy's herbs and spices.
+    </h1>
+    <img src="https://images.unsplash.com/photo-1509099342178-e323b1717dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80"
+        alt="woman">
+    <h2>
+        Using African herbs and spices for healthy living.
+    </h2>
+
+    <section>
+        <div class="flex">
+            <img src="https://www.thespruce.com/thmb/ZEfvNZP9U7icH0fabWbrkkwYtck=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/grow-an-herb-garden-that-wont-die-1762037-01-cc3f6cbbb5bc43c68faf2890ba5f59bc.jpg"
+                alt="mint">
+            <div>
+
+                <div class="form">
+                    <form action="/" class="decor">
+                        <div class="form-inner">
+                            <h3>Order now!</h3>
+                            <div><input type="text" placeholder="Name"></div>
+                            <div><input type="email" placeholder="Email"></div>
+                            <textarea placeholder="Your order..." rows="3"></textarea>
+                            <button type="submit" href="/">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <p>Shop bulk herbs and spices at Mummy's herbs and spices. Our herbs are trusted for their unmatched
+                    quality
+                    and
+                    freshness and
+                    are hand-selected from the finest gardens.
+                    We have dried soy sop leaves and moringa avaiable for purchase.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        /* function Enquire() {
+            let name = prompt("What's your name?");
+            let email = prompt("What's your email address?");
+            alert("Noted!(Contact abenaeunice@gmail.com for a faster transaction)")
+            let h3 = document.querySelector("h3")
+            h3.innerHTML = `Ok! ${name}, We'll be in touch🙂.`
+        }
+
+        let button = document.querySelector("button")
+        button.addEventListener("click", Enquire) */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --dark-color: #c023ce;
+        --light-color: #e91313;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+
+      #darkGroup {
+        fill: var(--dark-color);
+      }
+
+      #lightGroup {
+        fill: var(--light-color);
+      }
+
+      #dark1,
+      #dark2,
+      #light {
+        transition: all 2s ease-in-out;
+      }
+
+      #dark2 {
+        transform: translateX(-90%);
+      }
+
+      svg:hover #light {
+        transform: translateX(20%);
+      }
+
+      svg:hover #dark1 {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      svg:hover #dark2 {
+        transform: translateX(20%);
+        fill-opacity: var(--light-color);
+        opacity: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      width="328"
+      height="288"
+      viewBox="0 0 328 288"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="328" height="288" fill="#F5F5F5" />
+      <g id="Section 1">
+        <path
+          d="M0 1.99999C0 0.895423 0.89543 0 2 0H326C327.105 0 328 0.895431 328 2V286C328 287.105 327.105 288 326 288H2C0.895429 288 0 287.105 0 286V1.99999Z"
+        />
+        <g id="darkGroup">
+          <path
+            id="dark2"
+            d="M127.335 143.651C130.712 145.567 130.712 150.433 127.335 152.349L12.7173 217.376C9.38408 219.267 5.25 216.859 5.25 213.027L5.25 82.9732C5.25 79.1409 9.38408 76.7333 12.7173 78.6243L127.335 143.651Z"
+            fill-opacity="0.33"
+          />
+          <path
+            id="dark1"
+            d="M127.253 141.642C130.651 143.554 130.651 148.446 127.253 150.358L14.4513 213.809C11.1183 215.683 7 213.275 7 209.451L7 82.5492C7 78.7251 11.1183 76.3165 14.4513 78.1914L127.253 141.642Z"
+            fill-opacity="0.65"
+          />
+        </g>
+
+        <g id="lightGroup">
+          <path
+            id="light"
+            d="M221.558 142.072C225.128 143.945 225.128 149.055 221.558 150.928L122.573 202.848C119.243 204.594 115.25 202.18 115.25 198.42L115.25 94.5799C115.25 90.8204 119.243 88.4058 122.573 90.152L221.558 142.072Z"
+            fill-opacity="0.53"
+          />
+        </g>
+
+        <path
+          d="M2 1H326V-1H2V1ZM327 2V286H329V2H327ZM326 287H2V289H326V287ZM1 286V1.99999H-1V286H1ZM2 287C1.44771 287 1 286.552 1 286H-1C-1 287.657 0.343143 289 2 289V287ZM327 286C327 286.552 326.552 287 326 287V289C327.657 289 329 287.657 329 286H327ZM326 1C326.552 1 327 1.44771 327 2H329C329 0.343147 327.657 -1 326 -1V1ZM2 -1C0.343151 -1 -1 0.343133 -1 1.99999H1C1 1.44771 1.44771 1 2 1V-1Z"
+          fill-opacity="0.1"
+        />
+      </g>
+    </svg>
+    <!-- <script>
+      const svg = document.getElementById("logo");
+      svg.onclick = (e) => {
+        const colors = [
+          "red",
+          "blue",
+          "green",
+          "yellow",
+          "brown",
+          "black",
+          "pink",
+        ];
+        const rando = () => colors[Math.floor(Math.random() * colors.length)];
+        document.documentElement.style.cssText = `
+         --dark-color: ${rando()};
+         `;
+      };
+    </script>-->
+    <script>
+      let city = "Accra";
+      let country = "Ghana";
+      let sentence = "I am from " + city + ", " + country;
+      alert(sentence);
+      console.log("Let's code!");
+    </script>
+  </body>
+</html>
