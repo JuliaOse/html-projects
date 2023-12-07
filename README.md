@@ -1,3 +1,3 @@
 # html-projects
-Few of the projects \n
-I did when i was learning html \n
+#Few of the projects 
+#I did when i was learning html 
